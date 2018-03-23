@@ -1,0 +1,48 @@
+include ../container/container
+include ../title/title
+include ../button/button
+
+mixin prices()
+	+b('section').prices
+		+ container()
+			+e.col
+				+title('Стоимость Эвакуатора')
+				+e.content
+					+e('table').table
+						tbody
+							tr
+								td Мотоциклы и скутеры
+								td от 1000 р.
+							tr
+								td
+									table
+										tr
+											td Легковые авто
+											td до 1,5 т.
+										tr
+											td
+											td от 1,5 – 2 т.
+										tr
+											td
+											td от 2 т.
+								td
+									table
+										tr
+											td от 1000 р.
+										tr
+											td от 1300 р.
+										tr
+											td от 1500 р.
+							tr
+								td Минивэны и джипы
+								td от 1500 р.
+							tr
+								td Коммерческий транспорт малого размера
+								td от 1700 р.
+							tr
+								td Спецтехника
+								td от 1700 р.
+				+button('Заказать эвакуатор')
+			+e.col
+				+title('Дополнительные услуги')
+

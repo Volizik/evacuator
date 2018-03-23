@@ -1,0 +1,17 @@
+include ../container/container
+include ../button/button
+
+mixin header()
+	+b('header').header
+		+container()
+			+e.top
+				+e('span').phone +7 (4942) 499-493
+				+button('Заказать звонок')
+			+e.text
+				+e.location
+					img(src='assets/images/icons/place.png' alt='')
+					span Кострома и Костромская область
+				+e('h1').title Служба эвакуации автомобилей
+				+e('p').desc Вызов эвакуатора от 1000 р., выезд 15 мин. Круглосуточно! Без выходных!
+				+button('Заказать звонок')
+			+e('img').car(src='assets/images/evacuator.png' alt='')

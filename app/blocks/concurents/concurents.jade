@@ -1,0 +1,29 @@
+include ../container/container
+include ../title/title
+
+mixin concurents()
+	+b('section').concurents
+		+container()
+			+e.text
+				+title('Почему у нас нет конкурентов?')
+				+e('p').paragraph Наша компания, проанализировав ситуацию на рынке услуг, предлагает круглосуточную возможность эвакуировать автомобиль с любыми видами повреждений, так как в нашем парке имеется эвакуатор с манипулятором. Выезд эвакуаторов происходит в течение 15 минут после оформления заказа.
+				+e('p').paragraph Оперативность обусловлена наличием 5 исправных машин с водителями в любой момент времени. Мы гарантируем высокое качество и скорость выполнения заказа при абсолютно демократичных ценах на эвакуатор в Костроме.
+			+e('ul').items
+				+e('li').item
+					img(src='assets/images/icons/concurents-icon1.png' alt='')
+					span Работаем круглосуточно
+				+e('li').item
+					img(src='assets/images/icons/concurents-icon2.png' alt='')
+					span Грузоподъемность до 2,5 т.
+				+e('li').item
+					img(src='assets/images/icons/concurents-icon3.png' alt='')
+					span Лучшая цена по городу и области
+				+e('li').item
+					img(src='assets/images/icons/concurents-icon4.png' alt='')
+					span 100% бережная пеевозка
+				+e('li').item
+					img(src='assets/images/icons/concurents-icon5.png' alt='')
+					span Время ожидания от 15 минут
+				+e('li').item
+					img(src='assets/images/icons/concurents-icon6.png' alt='')
+					span Только качественная спецтехника

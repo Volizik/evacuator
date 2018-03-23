@@ -1,6 +1,14 @@
 extends /blocks/layout-default/layout-default
+include ../blocks/header/header
+include ../blocks/concurents/concurents
+include ../blocks/trust/trust
+include ../blocks/prices/prices
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Project Template';
 
 block content
+	+header()
+	+concurents()
+	+trust()
+	+prices()
