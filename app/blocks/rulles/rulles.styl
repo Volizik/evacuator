@@ -3,11 +3,23 @@
 	padding-bottom 56px
 	display block
 	background url(../images/rulles-bg-left.png) no-repeat center left, url(../images/rulles-bg-right.png) no-repeat center right
-	+below(1500px)
-		background url(../images/rulles-bg-left.png) no-repeat left bottom -80px, url(../images/rulles-bg-right.png) no-repeat right bottom -40px
+	+below(2000px)
+		background url(../images/rulles-bg-left.png) no-repeat left bottom -180px, url(../images/rulles-bg-right.png) no-repeat right bottom -40px
+		background-size 22%, 45%
+	+below(1400px)
+		padding-bottom 150px
+		background url(../images/rulles-bg-left.png) no-repeat left bottom -180px, url(../images/rulles-bg-right.png) no-repeat right bottom -80px
+		background-size 22%, 45%
+	+below(900px)
+		padding-bottom 150px
+		background url(../images/rulles-bg-left.png) no-repeat left bottom -100px, url(../images/rulles-bg-right.png) no-repeat right bottom -60px
 		background-size 22%, 45%
 	+below(600px)
 		padding-top 25px
+		background url(../images/rulles-bg-left.png) no-repeat left bottom -30px, url(../images/rulles-bg-right.png) no-repeat right bottom
+		background-size 22%, 45%
+	+below(400px)
+		padding-bottom 50px
 	.title
 		+below(600px)
 			text-align center
