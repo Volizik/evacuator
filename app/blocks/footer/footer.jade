@@ -1,3 +1,42 @@
+include ../container/container
+include ../button/button
+
 mixin footer()
-	+b.footer&attributes(attributes)
-		block
+	+b('footer').footer
+		+container
+			+e.wrap
+				+e('ul').list
+					+e('li').item
+						a(href='#') Расчет стоимости
+					+e('li').item
+						a(href='#') Цены
+					+e('li').item
+						a(href='#') Вопросы
+					+e('li').item
+						a(href='#') Фото
+				+e('ul').list
+					+e('li').item
+						img(src='assets/images/icons/footer-icon1.png')
+						span г. Кострома
+					+e('li').item
+						img(src='assets/images/icons/footer-icon2.png')
+						span Круглосуточно
+					+e('li').item
+						img(src='assets/images/icons/footer-icon3.png')
+						span e-vakuator24@yandex.ru
+					+e('li').item
+						img(src='assets/images/icons/footer-icon4.png')
+						span +7 (4942) 499-493
+			+e.form
+				+title('Заказать эвакуатор прямо сейчас')
+				+e('form')
+					+e.form-row
+						+e('input').input(type='text' placeholder='Ваш телефон')
+						+e('input').input(type='text' placeholder='Ваше имя')
+					+e.form-row
+						+e.checkbox
+							input(type='checkbox' id='checkbox')
+							label(for='checkbox') Я согласен(-а) на обработку своих персональных данных
+						+button('Заказать')
+
+

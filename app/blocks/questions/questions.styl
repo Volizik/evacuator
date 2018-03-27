@@ -1,2 +1,83 @@
 .questions
+	position relative
+	z-index 2
+	margin-top -112px
+	padding-top 140px
+	padding-bottom 28px
 	display block
+	background-color #f6f5f5
+	box-shadow 0 10px 10px #ddd
+	.title
+		+below(992px)
+			text-align center
+	&__content
+		display flex
+		justify-content space-between
+		+below(992px)
+			flex-direction column
+	&__wrap
+		margin 28px auto
+		display flex
+		flex-direction column
+		flex-basis 40%
+		max-width 450px
+		+below(992px)
+			margin 28px auto
+			flex-basis 100%
+		+below(600px)
+			margin-top 0
+	&__question
+		margin-bottom 4px
+		padding 0 15px
+		display inline-flex
+		justify-content center
+		align-items center
+		height 35px
+		font-family latoBold
+		font-size 17px
+		text-decoration none
+		color inherit
+		border 1px solid transparent
+		border-radius 4px
+		+below(600px)
+			padding 10px
+			height 30px
+			font-size 12.5px
+		&--active
+			border 1px solid #4974dd
+	&__answers
+		margin 36px 0
+		display flex
+		flex-direction column
+		align-items flex-end
+		max-width 590px
+		flex-basis 52%
+		+below(992px)
+			flex-basis 100%
+			max-width 100%
+		+below(600px)
+			margin 0
+		.button
+			margin-top 30px
+			margin-right 35px
+			width 225px
+			+below(600px)
+				margin 30px auto 0
+				width 200px
+	&__text
+		margin-bottom 40px
+		font-size 15px
+		line-height 21px
+		+below(600px)
+			font-size 12px
+			line-height 15px
+	&__text-strong
+		font-family latoBold
+		line-height 21px
+		text-transform uppercase
+		+below(600px)
+			display block
+			font-size 12px
+			text-align center
+			line-height 15px
+

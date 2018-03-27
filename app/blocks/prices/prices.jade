@@ -15,7 +15,7 @@ mixin prices()
 								td от 1000 р.
 							tr
 								td
-									table
+									+e('table').table-inside
 										tr
 											td Легковые авто
 											td до 1,5 т.
@@ -42,7 +42,20 @@ mixin prices()
 							tr
 								td Спецтехника
 								td от 1700 р.
-				+button('Заказать эвакуатор')
+					+button('Заказать эвакуатор')
 			+e.col
 				+title('Дополнительные услуги')
+				+e.item
+					+e('img').item-img(src='assets/images/icons/prices-icon1.png')
+					+e.item-text
+						+e('h3').item-title Трезвый водитель
+						+e('p').item-desc Мы отвезет Вашу ласточку к месту стоянки, если Вы после застолья не сможете сесть за руль.
+						+button('нужен водитель')
+				+e.item
+					+e('img').item-img(src='assets/images/icons/prices-icon2.png')
+					+e.item-text
+						+e('h3').item-title Выкуп авто
+						+e('p').item-desc Мы купим Ваше авто в любом состоянии по максимально объективной цене и в быстрые сроки.
+						+button('Продать авто')
+
 

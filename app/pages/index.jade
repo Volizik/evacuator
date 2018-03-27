@@ -3,6 +3,10 @@ include ../blocks/header/header
 include ../blocks/concurents/concurents
 include ../blocks/trust/trust
 include ../blocks/prices/prices
+include ../blocks/gallery/gallery
+include ../blocks/questions/questions
+include ../blocks/rulles/rulles
+include ../blocks/footer/footer
 
 block head
 	- var pageTitle = 'Project Template';
@@ -12,3 +16,7 @@ block content
 	+concurents()
 	+trust()
 	+prices()
+	+gallery()
+	+questions()
+	+rulles()
+	+footer()

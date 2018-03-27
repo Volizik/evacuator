@@ -1,2 +1,88 @@
 .gallery
+	position relative
+	z-index 4
+	margin-top 40px
 	display block
+	.container
+		display flex
+		+below(992px)
+			padding 0
+	&__title
+		position relative
+		z-index 2
+		padding 35px
+		display flex
+		justify-content center
+		align-items center
+		height 100%
+		width 100%
+		background-color rgba(0, 0, 0, .7)
+		+below(992px)
+			padding 15px
+			font-size 24px
+	&__slider
+		width calc(100% - 450px)
+		flex-shrink 0
+		+below(992px)
+			width calc(100% - 250px)
+	&__slide
+		position relative
+		z-index 4
+		margin 10px
+		display flex!important
+		flex-direction column
+		justify-content space-between
+		min-height 350px!important
+		+below(992px)
+			min-height 200px!important
+		img
+			width 100%
+			height calc(340px / 2)
+			object-fit cover
+			+below(992px)
+				height calc(190px / 2)
+	&__action
+		font-size 40px
+		color #fff
+		flex-shrink 0
+		.gallery__slide
+			position relative
+			width 400px
+			height 350px
+			+below(992px)
+				margin 10px 0
+				width 235px
+				height 200px
+			img
+				position absolute
+				top 0
+				left 0
+				height 100%
+	.slick-arrow
+		position absolute
+		z-index 4
+		top 52%
+		width 40px
+		height 30px
+		color transparent
+		background-color transparent
+		border none
+		background-size contain
+		background-repeat no-repeat
+		background-position center center
+		+below(992px)
+			width 20px
+			height 15px
+	.slick-next
+		left -120px
+		background-image url(../images/icons/arrow-next.png)
+		+below(992px)
+			left -60px
+	.slick-prev
+		left -180px
+		background-image url(../images/icons/arrow-prev.png)
+		+below(992px)
+			left -100px
+
+
+

@@ -1,2 +1,104 @@
 .footer
+	padding 35px 0 70px
 	display block
+	background-color #1d1d1d
+	.button
+		+below(600px)
+			align-self center
+			width 200px
+	.container
+		display flex
+		justify-content space-between
+		+below(992px)
+			flex-direction column
+	&__wrap
+		margin-top 10px
+		margin-left 58px
+		display flex
+		justify-content space-between
+		flex-basis 34%
+		+below(992px)
+			margin-left 0
+			flex-basis 100%
+	&__item
+		margin-bottom 18px
+		display flex
+		align-items flex-end
+		font-size 15px
+		color #fff
+		+below(600px)
+			font-size 12px
+		*
+			color #fff
+			text-decoration none
+		img
+			margin-right 5px
+			+below(600px)
+				size(12px)
+				object-fit contain
+	&__form
+		flex-basis 53%
+		+below(992px)
+			flex-basis 100%
+		.title
+			color #fff
+	&__form-row
+		padding-top 5px
+		margin-bottom 25px
+		width 100%
+		max-width 590px
+		display flex
+		justify-content space-between
+		+below(600px)
+			margin-bottom 5px
+			flex-direction column
+		>*
+			flex-basis 49%
+			+below(600px)
+				flex-basis 100%
+	&__input
+		padding 0 15px
+		height 40px
+		color #fff
+		background-color transparent
+		border 1px solid #fff
+		border-radius 5px
+		+below(600px)
+			margin-bottom 10px
+		&::placeholder
+			font-style italic
+	&__checkbox
+		margin-left 20px
+		+below(600px)
+			margin-bottom 15px
+			max-width 300px
+		input[type='checkbox']
+			display none
+		input[type='checkbox']:checked + label:after
+			display none
+		label
+			position relative
+			display flex
+			align-items flex-start
+			font-size 13px
+			line-height 1
+			color #fff
+			cursor pointer
+			&:before
+				margin-top 2px
+				margin-right 8px
+				display block
+				size(20px)
+				content ''
+				border 1px solid #fff
+				border-radius 50%
+				flex-shrink 0
+			&:after
+				display block
+				position absolute
+				top 7px
+				left 5px
+				size(12px)
+				content ''
+				border-radius 50%
+				background-color #4974dd

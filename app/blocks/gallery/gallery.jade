@@ -1,3 +1,28 @@
+include ../container/container
+
 mixin gallery()
-	+b.gallery&attributes(attributes)
-		block
+	+b('section').gallery
+		+container()
+			+e.action
+				+e.slide
+					+e('h2').title Наши эвакуаторы в работе
+					img(src='assets/images/slider-img1.png')
+			+e.slider
+				+e.slide
+					img(src='assets/images/slider-img1.png')
+					img(src='assets/images/slider-img1.png')
+				+e.slide
+					img(src='assets/images/slider-img1.png')
+					img(src='assets/images/slider-img1.png')
+				+e.slide
+					img(src='assets/images/slider-img1.png')
+					img(src='assets/images/slider-img1.png')
+				+e.slide
+					img(src='assets/images/slider-img1.png')
+					img(src='assets/images/slider-img1.png')
+				+e.slide
+					img(src='assets/images/slider-img1.png')
+					img(src='assets/images/slider-img1.png')
+				+e.slide
+					img(src='assets/images/slider-img1.png')
+					img(src='assets/images/slider-img1.png')

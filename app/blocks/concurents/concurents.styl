@@ -2,9 +2,15 @@
 	.container
 		display flex
 		justify-content space-between
+		+below(992px)
+			flex-direction column
 	&__text
 		margin-top 50px
 		width 45%
+		+below(992px)
+			width 100%
+		+below(600px)
+			margin-top 10px
 	&__items
 		margin 15px 10px 0 0
 		padding 10px 37px 30px
@@ -14,6 +20,12 @@
 		width 51%
 		background-color #fff
 		box-shadow 5px 5px 20px #ccc
+		+below(992px)
+			width 100%
+		+below(600px)
+			margin 0
+			padding 10px
+			box-shadow 5px 5px 10px #ccc
 	&__item
 		margin 20px 0 22px
 		display flex
@@ -22,16 +34,24 @@
 		font-family latoMedium
 		font-size 16px
 		line-height 23px
+		+below(600px)
+			margin 10px 0
+			font-size 8.5px
+			line-height 11px
 		img
 			margin-right 10px
 			width 50px
 			height 50px
 			object-fit contain
 			flex-shrink 0
+			+below(600px)
+				size(35px)
 	.title
 		margin-bottom 15px
 		text-align right
 	&__paragraph
 		margin-bottom 20px
 		font-family latoReg
-		line-height 18px
+		line-height 13px
+		+below(600px)
+			font-size 10px

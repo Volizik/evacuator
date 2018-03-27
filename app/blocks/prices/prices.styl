@@ -1,2 +1,75 @@
 .prices
+	padding-top 15px
 	display block
+	.title
+		+below(600px)
+			text-align center
+	.container
+		display flex
+		justify-content space-between
+		+below(992px)
+			flex-direction column
+	&__col
+		flex-basis 49%
+		+below(992px)
+			flex-basis 100%
+	&__content
+		display flex
+		flex-direction column
+		align-items flex-end
+		padding-top 8px
+		max-width 480px
+		+below(992px)
+			margin-bottom 30px
+			max-width 100%
+		.button
+			margin-top 15px
+			margin-right 25px
+			+below(600px)
+				margin 15px auto 0
+	&__table
+		top 10px
+		width 100%
+		font-size 15px
+		+below(600px)
+			font-size 10px
+		tr
+			height 38px
+			+below(600px)
+				height 20px
+
+	&__table-inside
+		td
+			&:first-of-type
+				width 120px
+			&:last-of-type
+				text-align right
+	&__item
+		margin 0 0 22px auto
+		padding-top 20px
+		display flex
+		align-items flex-start
+		max-width 500px
+		+below(992px)
+			max-width 100%
+		.button
+			margin-top 22px
+	&__item-img
+		margin-right 18px
+		margin-left 5px
+		+below(600px)
+			height 65px
+	&__item-title
+		margin-bottom 15px
+		font-family latoBold
+		font-size 15px
+		text-transform uppercase
+		+below(600px)
+			margin-bottom 10px
+			font-size 10px
+	&__item-desc
+		font-size 15px
+		line-height 22px
+		+below(600px)
+			font-size 10px
+			line-height 13px

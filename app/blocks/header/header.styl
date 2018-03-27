@@ -1,14 +1,25 @@
 .header
+  overflow hidden
   display block
   height 530px
   background url(../images/header-bg.png) no-repeat
   background-position 50% 0
+  +below(660px)
+    height 600px
+  +below(600px)
+    height 250px
+    background-size 900px
+  .container
+    +below(660px)
+      height 100%
   &__top
     display flex
     align-items center
     justify-content flex-end
     width 100%
     height 85px
+    +below(660px)
+      height 40px
     .button
       margin 0 10px
   &__phone
@@ -16,33 +27,61 @@
     display block
     font-family LatoBlack
     font-size 19px
+    +below(600px)
+      font-size 12px
   &__text
     margin-top 43px
     display flex
     flex-direction column
     align-items flex-start
     max-width 550px
+    +below(600px)
+      margin 10px auto
+      max-width 300px
     .button
       margin 33px 0 0 67px
+      +below(600px)
+        margin-top 10px
+
   &__location
     margin-left auto
     padding-right 12px
     display flex
     font-family latoMedium
     font-size 25.16px
+    +below(600px)
+      font-size 12px
     img
       margin-right 6px
       size(22px)
       object-fit contain
+      +below(600px)
+        size(12px)
   &__title
     font-family bebasBold
     font-size 48px
     line-height 65px
+    +below(600px)
+      line-height 27px
+      font-size 22.65px
   &__desc
     font-family latoMedium
     font-size 26.3px
     line-height 31px
+    +below(600px)
+      line-height 15px
+      font-size 12.4px
   &__car
     position absolute
     top 205px
     left 456px
+    +below(660px)
+      transform scale(.7)
+      left 100px
+      top auto
+      bottom 0
+    +below(600px)
+      width 300px
+      left auto
+      right -50px
+      bottom -10px

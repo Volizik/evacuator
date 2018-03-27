@@ -21,7 +21,6 @@
     "build": "gulp build",
     "production": "cross-env NODE_ENV=production npm-run-all clean build",
     "make-block": "babel-node make-block.js",
-    "lint:scripts": "eslint app gulp",
     "lint:styles": "gulp styles:lint",
     "lint:templates": "gulp templates:lint",
     "lint": "npm-run-all -p lint:*",

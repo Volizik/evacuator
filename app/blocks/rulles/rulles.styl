@@ -1,2 +1,50 @@
 .rulles
+	padding-top 60px
+	padding-bottom 56px
 	display block
+	background url(../images/rulles-bg-left.png) no-repeat center left, url(../images/rulles-bg-right.png) no-repeat center right
+	+below(1500px)
+		background url(../images/rulles-bg-left.png) no-repeat left bottom -80px, url(../images/rulles-bg-right.png) no-repeat right bottom -40px
+		background-size 22%, 45%
+	+below(600px)
+		padding-top 25px
+	.title
+		+below(600px)
+			text-align center
+	&__wrap
+		margin-left 68px
+		+below(600px)
+			margin-left 0
+	&__desc
+		margin-bottom 23px
+		padding-top 9px
+		line-height 17px
+		+below(600px)
+			text-align center
+	&__list
+		max-width 770px
+		counter-reset counter
+	&__item
+		margin-bottom 23px
+		display flex
+		align-items flex-start
+		line-height 18px
+		&:before
+			font-family sans-serif
+			font-size 48px
+			font-weight 700
+			line-height 1
+			content counter(counter)
+			counter-increment counter
+			+below(600px)
+				font-size 30px
+	&__text
+		+below(600px)
+			line-height 13px
+	&__img
+		margin-right 5px
+		size(44px)
+		object-fit contain
+		+below(600px)
+			size(25px)
+
