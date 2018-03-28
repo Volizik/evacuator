@@ -1,0 +1,10 @@
+extends ../blocks/layout-default/layout-default
+include ../blocks/page404/page404
+include ../blocks/modal/modal
+
+block head
+    - var pageTitle = 'Project Template';
+
+block content
+    +page404()
+    +modal()

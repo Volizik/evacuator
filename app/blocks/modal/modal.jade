@@ -1,0 +1,19 @@
+include ../button/button
+
+mixin modal()
+	div.overlay
+		+b.modal
+			+e('button').cross
+			+e('h2').title Оставьте заявку
+			+e('p').subtitle менеджер свяжется с Вами, проконсультирует и ответит на все вопросы
+			form
+				+e.form
+					+e('input').input(type='text' placeholder='Ваше имя')
+					+e('input').input(type='text' placeholder='Ваш телефон')
+					+e('input').input(type='text' placeholder='Ваш E-mail')
+					+button('Заказать звонок')
+			+e.checkbox
+				input(type='checkbox' id='agree')
+				label(for='agree')
+					span Нажимая кнопку «Записаться на просмотр», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в
+						a(href='#') Согласии на обработку персональных данных

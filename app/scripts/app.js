@@ -36,6 +36,22 @@
             $(tabId).show();
         });
 
+        $(document).on('click', '.modal', function (e) {
+            e.stopPropagation();
+        });
+        $(document).on('click', '.modal__cross', function () {
+            $(this).closest('.overlay').fadeOut('fast');
+        });
+        $(document).on('click', '.overlay', function () {
+            $(this).fadeOut('fast');
+        });
+        $(document).on('click', 'button.button', function () {
+            if (!$(this).closest('form').length > 0) {
+                $('.overlay').fadeIn('fast');
+            }
+        });
+
+
     });
 
 })(jQuery);

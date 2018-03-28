@@ -1,0 +1,45 @@
+.page404
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+	min-height 100vh
+	background-color #c9eefd
+	&__img
+		display block
+		width 100%
+		max-width 780px
+	&__title
+		margin-top 20px
+		font-family latoBold
+		font-size 22px
+		color #4974dd
+		+below(600px)
+			text-align center
+			font-size 18px
+	&__subtitle
+		margin-top 10px
+		font-family latoReg
+		font-size 22px
+		color #4974dd
+		+below(600px)
+			font-size 18px
+	&__actions
+		margin-top 30px
+		margin-bottom 60px
+		display flex
+		justify-content space-between
+		max-width 450px
+		width 100%
+		+below(600px)
+			margin-top 15px
+			margin-bottom 20px
+			max-width 280px
+	a.button
+		text-decoration none
+	button.button
+		color #4974dd
+		background-color transparent
+		border 1px solid #4974dd
+
+

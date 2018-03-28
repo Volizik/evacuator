@@ -1,0 +1,10 @@
+include ../button/button
+
+mixin page404()
+	+b.page404
+		+e.img(src='assets/images/404.png')
+		+e('h2').title Перейдите на главную или оставьте заявку
+		+e('p').subtitle и Вам обязательно перезвонят!
+		+e.actions
+			a.button(href='/') Перейти на главную
+			+button('Оставить заявку')
